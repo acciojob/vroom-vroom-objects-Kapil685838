@@ -5,12 +5,12 @@ function Car(make, model) {
 }
 
 function SportsCar(make, model, topSpeed) {
-	new Car(make, model);
+	Car.call(this, make, model);
 	this.topSpeed = topSpeed;
-}
-
-SportsCar.prototype.getTopSpeed = function () {
-	return this.topSpeed;
+	
+	this.getTopSpeed = function () {
+		return this.topSpeed;
+	}
 }
 
 // Do not change the code below
