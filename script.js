@@ -2,6 +2,10 @@
 function Car(make, model) {
 	this.make = make;
 	this.model = model;
+
+	this.getMakeModel = function () {
+		return `${this.make} ${this.model}`;
+	}
 }
 
 function SportsCar(make, model, topSpeed) {
